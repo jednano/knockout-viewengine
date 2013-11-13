@@ -1,0 +1,7 @@
+﻿<form data-bind="submit: addItem">
+	New item:
+	<input data-bind='value: itemToAdd, valueUpdate: "afterkeydown"'>
+	<button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
+	<p>Your items:</p>
+	<select multiple="multiple" style="width:50px" data-bind="options: items"> </select>
+</form>

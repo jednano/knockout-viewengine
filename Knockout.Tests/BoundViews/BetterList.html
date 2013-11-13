@@ -1,0 +1,17 @@
+﻿<form data-bind="submit: addItem">
+	Add item: <input type="text" data-bind='valueUpdate: "afterkeydown"'>
+	<button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
+</form>
+
+<p>Your values:</p>
+<select multiple="multiple" height="5">
+	<option>Fries</option>
+	<option>Eggs Benedict</option>
+	<option selected="selected">Ham</option>
+	<option>Cheese</option>
+</select>
+
+<div>
+	<button data-bind="click: removeSelected, enable: selectedItems().length > 0">Remove</button>
+	<button data-bind="click: sortItems, enable: allItems().length > 1">Sort</button>
+</div>

@@ -1,0 +1,13 @@
+﻿<div data-bind='simpleGrid: $data'> </div>
+
+<button data-bind='click: addItem'>
+	Add item
+</button>
+
+<button data-bind='click: sortByName'>
+	Sort by name
+</button>
+
+<button data-bind='click: jumpToFirstPage, enable: $data.currentPageIndex'>
+	Jump to first page
+</button>
