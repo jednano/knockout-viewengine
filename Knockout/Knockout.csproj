@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HtmlAgilityPack">
-      <HintPath>..\packages\HtmlAgilityPack.1.4.0\HtmlAgilityPack.dll</HintPath>
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="Jint">
       <HintPath>..\..\..\..\..\Desktop\Jint - Binaries\Jint.dll</HintPath>
@@ -67,6 +67,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\jquery.txt" />
     <None Include="Resources\knockout.txt" />
     <Content Include="Resources\SimpleGridView.txt" />
