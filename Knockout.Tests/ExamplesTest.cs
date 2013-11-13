@@ -72,15 +72,15 @@ namespace Knockout.Tests
 		public void TestPagedGrid()
 		{
 			var initialData = new List<PagedGrid.Item>
-			                  	{
-			                  		new PagedGrid.Item {Name = "Well-Travelled Kitten", Sales = 352, Price = 75.95},
-			                  		new PagedGrid.Item {Name = "Speedy Coyote", Sales = 89, Price = 190},
-			                  		new PagedGrid.Item {Name = "Furious Lizard", Sales = 152, Price = 25},
-			                  		new PagedGrid.Item {Name = "Indifferent Monkey", Sales = 1, Price = 99.95},
-			                  		new PagedGrid.Item {Name = "Brooding Dragon", Sales = 0, Price = 6350},
-			                  		new PagedGrid.Item {Name = "Ingenious Tadpole", Sales = 39450, Price = .35},
-			                  		new PagedGrid.Item {Name = "Optimistic Snail", Sales = 420, Price = 1.5}
-			                  	};
+			{
+				new PagedGrid.Item {Name = "Well-Travelled Kitten", Sales = 352, Price = 75.95},
+				new PagedGrid.Item {Name = "Speedy Coyote", Sales = 89, Price = 190},
+				new PagedGrid.Item {Name = "Furious Lizard", Sales = 152, Price = 25},
+				new PagedGrid.Item {Name = "Indifferent Monkey", Sales = 1, Price = 99.95},
+				new PagedGrid.Item {Name = "Brooding Dragon", Sales = 0, Price = 6350},
+				new PagedGrid.Item {Name = "Ingenious Tadpole", Sales = 39450, Price = .35},
+				new PagedGrid.Item {Name = "Optimistic Snail", Sales = 420, Price = 1.5}
+			};
 			TestDataBind(new PagedGrid(initialData));
 		}
 	}
